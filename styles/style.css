@@ -145,6 +145,10 @@
   gap: 20px;
 }
 
+.gallery__section {
+  gap: 10px;
+}
+
 .section__list-item {
   display: flex;
   flex-direction: column;
