@@ -24,8 +24,8 @@
   display: var(--display-decoration-record, flex);
   align-items: center;
   gap: 10px;
-  top: 20px;
-  right: 30px;
+  top: 10px;
+  right: 20px;
   color: var(--decoration-color, #FF0070);
 }
 
@@ -48,15 +48,15 @@
 .decoration-element--top-right {
   border-top: 1px solid var(--decoration-color, #FF0070);
   border-right: 1px solid var(--decoration-color, #FF0070);
-  top: 20px;
-  right: 20px;
+  top: 10px;
+  right: 10px;
 }
 
 .decoration-element--bottom-left {
   border-bottom: 1px solid var(--decoration-color, #FF0070);
   border-left: 1px solid var(--decoration-color, #FF0070);
-  bottom: 20px;
-  left: 20px;
+  bottom: 10px;
+  left: 10px;
 }
 
 .header__theme-menu {
@@ -66,7 +66,7 @@
 .header__theme-menu-list {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 12px;
 }
 
 .header__theme-menu-button {
@@ -141,6 +141,10 @@
   gap: 10px;
 }
 
+.text__section .section__list {
+  gap: 20px;
+}
+
 .section__list-item {
   display: flex;
   flex-direction: column;
@@ -197,6 +201,7 @@
 @media (width >=768px) {
   .header {
     grid-template-columns: 1fr 1fr;
+    padding: 20px 0;
   }
 
   .header__title {
@@ -214,8 +219,27 @@
     margin-right: 20px;
   }
 
+  .header__theme-menu-list {
+    gap: 8px;
+  }
+
   .header__theme-menu {
     grid-column: 2;
+  }
+
+  .decoration-element--top-right {
+    top: 20px;
+    right: 20px;
+  }
+
+  .decoration-element--bottom-left {
+    bottom: 20px;
+    left: 20px;
+  }
+
+  .header__decoration-record {
+    top: 20px;
+    right: 30px;
   }
 
   .main__content {
@@ -227,14 +251,23 @@
     padding: 0 20px;
   }
 
-  .text__section .section__list {
-    gap: 20px;
-  }
-
   .text__section:nth-child(odd) {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: 10px;
+    gap: 20px;
+  }
+
+  .text__section:nth-child(even) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: min-content 1fr;
+    gap: 20px;
+  }
+  
+  .text__section:nth-child(even) .section__list {
+    gap: 20px;
+    grid-column: 1/4;
+    grid-row: 2;
   }
 
   .section__list-gallery {
@@ -306,9 +339,6 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 1fr;
-    gap: 20px;
-    grid-column: 1/4;
-    grid-row: 2
   }
 
   .header__theme-menu-list {
