@@ -146,6 +146,10 @@
   font-size: 1.125rem;
 }
 
+.section__list-title + .section__list-title {
+  margin-top: 10px;
+}
+
 .section__list-title--thin {
   font-weight: normal;
 }
@@ -266,7 +270,7 @@
     gap: 20px;
   }
 
-  .section__list {
+  .main__section:nth-child(even) .section__list {
     grid-column: 1/4;
     grid-row: 2
   }
