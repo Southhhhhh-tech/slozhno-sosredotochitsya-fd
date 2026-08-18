@@ -95,8 +95,7 @@
 }
 
 .header__title {
-  /*font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);*/
-  font-size: 8rem;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   justify-self: flex-start;
   line-height: 0.8;
   color: var(--title-color, #DB00FF);
