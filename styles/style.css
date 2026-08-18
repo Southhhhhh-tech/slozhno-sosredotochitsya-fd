@@ -220,10 +220,15 @@
 
   .main__content {
     padding: 60px 0;
+    gap: 80px;
   }
 
   .main__section {
     padding: 0 20px;
+  }
+
+  .text__section .section__list {
+    gap: 20px;
   }
 
   .text__section:nth-child(odd) {
@@ -283,19 +288,11 @@
     grid-row: 3;
   }
 
-  .main__content {
-    gap: 80px;
-  }
-
   .header__theme-menu {
     align-self: flex-start;
     justify-self: center;
     grid-column: span 2;
     margin: 0 auto;
-  }
-
-  .text__section .section__list {
-    gap: 20px;
   }
 
   .text__section:nth-child(even) {
