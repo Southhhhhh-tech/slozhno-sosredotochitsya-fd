@@ -1,5 +1,5 @@
 :root {
-  --cover-image: url(/images/cover-image.png);
+  --cover-image: url(../images/cover-image.png);
   --page-font-family: "IBM Plex Mono";
   --page-font-size: 1.125rem;
   --highlight-color: #FF0070;

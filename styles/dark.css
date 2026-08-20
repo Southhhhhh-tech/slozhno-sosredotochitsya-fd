@@ -1,6 +1,6 @@
 @media (prefers-color-scheme: dark) {
   :root {
-    --cover-image: url(/images/cover-image-dark.png);
+    --cover-image: url(../images/cover-image-dark.png);
     --page-font-family: "IBM Plex Mono";
     --page-font-size: 1.125rem;
     --highlight-color: #FF0070;
@@ -11,13 +11,13 @@
     --section-title-color: #FF0070;
     --decoration-color: #FF0070;
     --theme-menu-color: #FF0070;
-    --theme-menu-color-rbga: rgba(255, 0, 112, 0.5);
+    --theme-menu-color-rbga: rgba(255, 0, 112, 0.4);
     --display-decoration-record: flex;
   }
 }
 
 :root.theme-dark {
-  --cover-image: url(/images/cover-image-dark.png);
+  --cover-image: url(../images/cover-image-dark.png);
   --page-font-family: "IBM Plex Mono";
   --page-font-size: 1.125rem;
   --highlight-color: #FF0070;
@@ -28,6 +28,6 @@
   --section-title-color: #FF0070;
   --decoration-color: #FF0070;
   --theme-menu-color: #FF0070;
-  --theme-menu-color-rbga: rgba(255, 0, 112, 0.5);
+  --theme-menu-color-rbga: rgba(255, 0, 112, 0.4);
   --display-decoration-record: flex;
 }
