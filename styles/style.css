@@ -12,13 +12,40 @@
 
 .header {
   display: grid;
-  position: relative;
   grid-template-rows: 1fr min-content 1fr;
   align-items: center;
   justify-items: end;
   height: 100vh;
   min-height: 668px;
   padding: 5px 0;
+}
+
+.decorated-zone {
+  position: relative;
+}
+
+.decorated-zone::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-top: 1px solid var(--decoration-color, #FF0070);
+  border-right: 1px solid var(--decoration-color, #FF0070);
+  top: 10px;
+  right: 10px;
+}
+
+.decorated-zone::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-bottom: 1px solid var(--decoration-color, #FF0070);
+  border-left: 1px solid var(--decoration-color, #FF0070);
+  bottom: 10px;
+  left: 10px;
 }
 
 .header__decoration-record {
@@ -39,26 +66,6 @@
   border-radius: 50%;
   box-shadow: 0 0 4px 2px var(--decoration-color, #FF0070);
   background-color: var(--decoration-color, #FF0070);
-}
-
-.decoration-element {
-  position: absolute;
-  width: 25px;
-  height: 25px;
-}
-
-.decoration-element--top-right {
-  border-top: 1px solid var(--decoration-color, #FF0070);
-  border-right: 1px solid var(--decoration-color, #FF0070);
-  top: 10px;
-  right: 10px;
-}
-
-.decoration-element--bottom-left {
-  border-bottom: 1px solid var(--decoration-color, #FF0070);
-  border-left: 1px solid var(--decoration-color, #FF0070);
-  bottom: 10px;
-  left: 10px;
 }
 
 .header__theme-menu {
@@ -199,7 +206,6 @@
 
 .footer__section {
   display: flex;
-  position: relative;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -240,12 +246,12 @@
     grid-column: 2;
   }
 
-  .decoration-element--top-right {
+  .decorated-zone::before {
     top: 20px;
     right: 20px;
   }
 
-  .decoration-element--bottom-left {
+  .decorated-zone::after {
     bottom: 20px;
     left: 20px;
   }
