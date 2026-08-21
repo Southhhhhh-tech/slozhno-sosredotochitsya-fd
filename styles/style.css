@@ -96,7 +96,7 @@
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid var(--theme-menu-color-rbga, rgba(255, 0, 112, 0.5));
+  border: 1px solid var(--theme-menu-color-rbga, rgba(255, 0, 112, 0.4));
 }
 
 .header__theme-menu-button_active {
